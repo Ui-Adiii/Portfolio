@@ -6,12 +6,15 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import React from "react";
-
+import SmoothScroll from "./components/SmoothScroll";
+      // SmoothScroll
 const App = () => {
 
   return (
     <>
       <NavBar />
+      <SmoothScroll>
+
       <div className="px-5 md:px-10 lg:px-20 ">
         <Routes>
           <Route path="/" element={<Main />} />
@@ -21,6 +24,8 @@ const App = () => {
           <Route path="/experience" element={<Experience />} />
         </Routes>
       </div>
+            </SmoothScroll>
+
     </>
   );
 };

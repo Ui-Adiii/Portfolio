@@ -4,21 +4,49 @@ import { Github, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { InfoContext } from "@/context/Context";
 import ProfilePic1 from "/images/ProfilePic1.jpeg";
-
+import {easeIn, motion} from "framer-motion"
 const Home = () => {
   const { linkedin, github, fullName } = useContext(InfoContext);
   return (
     <div className="flex pt-20 text-white flex-col  sm:flex-row py-10 gap-10 lg:gap-0">
       <div className="w-full sm:w-1/2 flex  md:justify-center md:items-center flex-col gap-4 ">
-        <h1 className="w-fit  lg:w-full text-6xl tracking-tight lg:text-8xl font-bold capitalize  leading-none">
+        <motion.h1 
+        initial={{
+          opacity:0,
+          y:10
+        }}
+        animate={{
+          opacity:1,
+          y:0
+        }}
+        transition={{
+          delay:.2,
+          duration:1,
+          transform:easeIn
+        }}
+         className="w-fit  lg:w-full text-6xl tracking-tight lg:text-8xl font-bold capitalize  leading-none">
           hi, i am <br />
           {fullName}.
-        </h1>
-        <p className=" text-md lg:text-lg text-white/40">
+        </motion.h1>
+        <motion.p 
+        initial={{
+          opacity:0,
+          y:10
+        }}
+        animate={{
+          opacity:1,
+          y:0
+        }}
+        transition={{
+          delay:.2,
+          duration:1,
+          transform:easeIn
+        }}
+        className=" text-md lg:text-lg text-white/40">
           A student at C.V. Raman Global
           University (B.Tech), passionate about building accessible and
           user-friendly websites.
-        </p>
+        </motion.p>
         <div className="flex justify-start  w-full gap-4 items-center">
           <Link to={"/contact"}>
             <Button variant={"secondary"}>Contact me</Button>

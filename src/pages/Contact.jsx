@@ -3,23 +3,43 @@ import { InfoContext } from "@/context/Context";
 import { Github, Linkedin } from "lucide-react";
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-
+import {easeIn, motion} from 'framer-motion'
 const Contact = () => {
   const { email, github, linkedin } = useContext(InfoContext);
   return (
     <div className="flex  py-20 md:py-44  max-h-screen text-white flex-col  sm:flex-row gap-10 lg:gap-0">
       <div className="w-full sm:w-1/2 ">
-        <h1 className="text-7xl tracking-tighter font-semibold leading-none">
+        <motion.h1
+        initial={{
+          y:20,
+          opacity:0
+        }}
+        whileInView={{
+          y:0,
+opacity:1
+        }}
+        viewport={{
+          amount:0,
+          once:false
+        }}
+          transition={{
+          delay:0.2,
+        
+          duration:.5,
+          ease:easeIn
+        }}
+        
+        className="text-7xl tracking-tighter font-semibold leading-none">
           Let’s connect
-        </h1>
+        </motion.h1>
         <p className="mt-5 text-lg text-white/40">
-          Say hello at{" "}
+          Say hello at
           <span className="text-white border-b-yellow-200 border-b">
             {email}
           </span>
         </p>
         <p className="text-lg text-white/40">
-          For more info, here’s my{" "}
+          For more info, here’s my
           <a
             className="text-white border-b-yellow-200 border-b"
             href="resume.pdf"

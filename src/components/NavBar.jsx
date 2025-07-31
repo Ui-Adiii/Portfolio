@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { InfoContext } from '../context/Context';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import {  easeInOut, motion } from "framer-motion";
 
 const NavBar = () => {
   const { fullName } = useContext(InfoContext);
@@ -10,7 +11,15 @@ const NavBar = () => {
   const navLinks = ['work', 'about', 'contact'];
 
   return (
-    <div className='backdrop-blur bg-black/30  text-white fixed top-0 left-0 w-full z-10 '>
+    <motion.div
+    initial={{y:-100}}
+    animate={{y:0}}
+    transition={{
+      delay:.4,
+      duration:.5,
+      transform:easeInOut
+    }}
+    className='backdrop-blur bg-black/30  text-white fixed top-0 left-0 w-full z-10 '>
       <div className='px-10 py-5 flex justify-between items-center'>
         
         <Link to={"/"}>
@@ -47,7 +56,7 @@ const NavBar = () => {
           ))}
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 
