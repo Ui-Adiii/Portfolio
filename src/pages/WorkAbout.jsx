@@ -1,0 +1,52 @@
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { Github, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { InfoContext } from "@/context/Context";
+import ProfilePic3 from "/images/ProfilePic3.jpeg";
+const WorkAbout = () => {
+  
+  const { github, linkedin,shortDescription,description } = useContext(InfoContext);
+  return (
+    <>
+      <div className="flex py-10 md:py-44  text-white flex-col  md:flex-row  gap-10 lg:gap-0">
+        <div className="w-full md:w-1/2   ">
+          <h1 className="text-6xl md:text-6xl font-semibold tracking-tighter uppercase">
+            about me
+          </h1>
+        </div>
+        <div className="w-full md:w-1/2 ">
+          <h1 className=" text-2xl  md:text-3xl text-white lg:text-4xl  tracking-tighter leading-none ">
+            {shortDescription}
+          </h1>
+          <p className=" text-white/40 my-5">
+            {description}
+          </p>
+
+          <div className="flex gap-4 items-center">
+            <a href="resume.pdf">
+              <Button variant={"secondary"}>Download Resume</Button>
+            </a>
+            <Link to={github}>
+              <Github />
+            </Link>
+            <Link to={linkedin}>
+              <Linkedin />
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="w-full sm:p-10 bg-[#1A1A1A] rounded-lg">
+        <div className="w-full h-full rounded-lg overflow-hidden">
+          <img
+            src={ProfilePic3}
+            className="h-full w-full object-fit object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default WorkAbout;
