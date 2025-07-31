@@ -30,15 +30,15 @@ opacity:1
         }}
         
         className="text-7xl tracking-tighter font-semibold leading-none">
-          Let’s connect
+          Let’s connect 
         </motion.h1>
-        <p className="mt-5 text-lg text-white/40">
-          Say hello at
+        <p className="mt-5 text-lg flex gap-2 text-white/40">
+          Say hello at 
           <span className="text-white border-b-yellow-200 border-b">
             {email}
           </span>
         </p>
-        <p className="text-lg text-white/40">
+        <p className="text-lg flex gap-2 text-white/40">
           For more info, here’s my
           <a
             className="text-white border-b-yellow-200 border-b"

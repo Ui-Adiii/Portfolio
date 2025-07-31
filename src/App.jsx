@@ -7,12 +7,15 @@ import About from "./pages/About";
 import Experience from "./pages/Experience";
 import React from "react";
 import SmoothScroll from "./components/SmoothScroll";
-      // SmoothScroll
+import ScrollTop from "./components/ScrollTop";
+
+
 const App = () => {
 
   return (
     <>
       <NavBar />
+      <ScrollTop/>
       <SmoothScroll>
 
       <div className="px-5 md:px-10 lg:px-20 ">

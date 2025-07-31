@@ -24,6 +24,7 @@ const data = {
     "Github",
     "Tailwind Css",
     "Redux",
+    "Oop"
   ],
   experiences: [
     {
