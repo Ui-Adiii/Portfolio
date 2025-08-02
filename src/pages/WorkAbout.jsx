@@ -43,7 +43,7 @@ const WorkAbout = () => {
           </p>
 
           <div className="flex gap-4 items-center">
-            <a href="resume.pdf">
+            <a href="aditya_mallick_full_stack.pdf" download>
               <Button variant={"secondary"}>Download Resume</Button>
             </a>
             <Link to={github}>

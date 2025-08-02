@@ -42,7 +42,7 @@ opacity:1
           For more info, here’s my
           <a
             className="text-white border-b-yellow-200 border-b"
-            href="resume.pdf"
+            href="aditya_mallick_full_stack.pdf"
             download
           >
             resume
