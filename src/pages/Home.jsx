@@ -15,17 +15,13 @@ const Home = () => {
           opacity:0,
           y:10
         }}
-        whileInView={{
+        animate={{
           opacity:1,
           y:0
         }}
-        viewport={{
-          once:false,
-          amount:.6
-        }}
         transition={{
           delay:.2,
-          duration:1,
+          duration:.4,
           transform:easeIn
         }}
          className="w-fit  lg:w-full text-6xl tracking-tight lg:text-8xl font-bold capitalize  leading-none">
@@ -34,20 +30,17 @@ const Home = () => {
         </motion.h1>
         <motion.p 
         initial={{
-          opacity:0,
+          opacity:0.7,
           y:10
         }}
-        whileInView={{
+        animate={{
           opacity:1,
           y:0
         }}
-        viewport={{
-          once:false,
-          amount:.6
-        }}
+        
         transition={{
           delay:.2,
-          duration:1,
+          duration:.5,
           transform:easeIn
         }}
         className=" text-md lg:text-lg text-white/40">
@@ -72,17 +65,14 @@ const Home = () => {
           initial={{
             y:-100,
             scale:.7,
-            opacity:.1
+            opacity:0
           }}
-          whileInView={{
+          animate={{
             y:0,
             scale:1,
             opacity:1
           }}
-          viewport={{
-            once:true,
-            amount:.5
-          }}
+          
           transition={{
             delay:.2,
             duration:.7,

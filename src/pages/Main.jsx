@@ -11,11 +11,10 @@ const Main = () => {
       <Home/>
       <hr/>
       <Projects/>
-      <hr className="mt-10" />
       <Capability/>
       <hr />
       <MyExp/>
-      <hr />
+      <hr className="mb-5 md:mb-0"/>
       <About/>
       <hr />
       <Contact  />

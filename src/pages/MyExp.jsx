@@ -5,7 +5,7 @@ import {easeIn, motion} from 'framer-motion'
 const MyExp = () => {
     const {experiences} =useContext(InfoContext);
     return (
-    <div className="gap-5 flex md:flex-row flex-col py-10  text-white  ">
+    <div className="gap-5 flex md:flex-row flex-col py-10  text-white  max-w-screen">
       <div className="w-full md:w-1/2 ">
         <motion.h1
         

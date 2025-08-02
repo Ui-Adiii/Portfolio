@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { InfoContext } from "@/context/Context";
-import ProfilePic3 from "/images/ProfilePic3.jpeg";
 import {easeIn, motion} from 'framer-motion'
 const WorkAbout = () => {
   
@@ -54,15 +53,6 @@ const WorkAbout = () => {
               <Linkedin />
             </Link>
           </div>
-        </div>
-      </div>
-      <div className="w-full sm:p-10 bg-[#1A1A1A] rounded-lg">
-        <div className="w-full h-full rounded-lg overflow-hidden">
-          <img
-            src={ProfilePic3}
-            className="h-full w-full object-fit object-cover"
-            alt=""
-          />
         </div>
       </div>
     </>
