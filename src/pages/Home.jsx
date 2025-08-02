@@ -4,20 +4,24 @@ import { Github, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { InfoContext } from "@/context/Context";
 import ProfilePic1 from "/images/ProfilePic1.jpeg";
-import {easeIn, motion} from "framer-motion"
+import {easeIn, easeOut, motion} from "framer-motion"
 const Home = () => {
   const { linkedin, github, fullName } = useContext(InfoContext);
   return (
-    <div className="flex pt-20 text-white flex-col  sm:flex-row py-10 gap-10 lg:gap-0">
+    <div className="flex pt-20 max-h-screen text-white flex-col  sm:flex-row py-10 gap-10 lg:gap-0">
       <div className="w-full sm:w-1/2 flex  md:justify-center md:items-center flex-col gap-4 ">
         <motion.h1 
         initial={{
           opacity:0,
           y:10
         }}
-        animate={{
+        whileInView={{
           opacity:1,
           y:0
+        }}
+        viewport={{
+          once:false,
+          amount:.6
         }}
         transition={{
           delay:.2,
@@ -33,9 +37,13 @@ const Home = () => {
           opacity:0,
           y:10
         }}
-        animate={{
+        whileInView={{
           opacity:1,
           y:0
+        }}
+        viewport={{
+          once:false,
+          amount:.6
         }}
         transition={{
           delay:.2,
@@ -60,7 +68,26 @@ const Home = () => {
         </div>
       </div>
       <div className="w-full sm:w-1/2 rounded-md overflow-hidden">
-        <img
+        <motion.img
+          initial={{
+            y:-100,
+            scale:.7,
+            opacity:.1
+          }}
+          whileInView={{
+            y:0,
+            scale:1,
+            opacity:1
+          }}
+          viewport={{
+            once:true,
+            amount:.5
+          }}
+          transition={{
+            delay:.2,
+            duration:.7,
+            ease:easeOut
+          }}
           className="h-full w-full object-cover object-center "
           src={ProfilePic1}
           alt=""

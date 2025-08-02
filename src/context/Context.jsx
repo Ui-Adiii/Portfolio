@@ -24,7 +24,9 @@ const data = {
     "Github",
     "Tailwind Css",
     "Redux",
-    "Oop"
+    "Oop",
+    "Shadcn Ui",
+    "BootStrap"
   ],
   experiences: [
     {
@@ -45,6 +47,7 @@ const data = {
         year: 2025,
         role: "Front-end Developer",
       },
+      teckStack:['react js','node js','express js','tailwind','flow-bite'],
       links: {
         liveDemo: "https://frontend-ecommerce-five-mu.vercel.app",
         github: "https://github.com/Ui-Adiii/Ecommerce",
@@ -59,6 +62,7 @@ const data = {
         year: 2025,
         role: "Full Stack Developer",
       },
+      teckStack:['react js','node js','express js','tailwind','mongodb','shadcn ui'],
       links: {
         liveDemo: "https://frontend-blog-rho.vercel.app/",
         github: "https://github.com/Ui-Adiii/Blog-App",
