@@ -46,8 +46,8 @@ const Capability = () => {
             duration:.7,
             transform:easeIn
           }}
-           className="text-white/40 mb-5">
-          I’m always looking to expand my skill set and grow as a developer. I enjoy learning new technologies and staying updated with modern development practices.
+           className="text-white text-xl md:text-2xl lg:text-3xl font-semibold  mb-5">
+         Technologies I Work With :
         </motion.p>
         <div className="flex  flex-wrap gap-4 ">
           {skills.map((skill, idx) => (

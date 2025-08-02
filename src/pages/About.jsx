@@ -55,7 +55,7 @@ const About = () => {
             duration: 0.5,
             ease: easeIn,
           }}
-          className="mt-40 md:mt-0 text-2xl text-white/40 md:text-3xl md:text-white lg:text-4xl  tracking-tighter leading-none "
+          className="mt-40 md:mt-0 text-2xl text-white md:text-3xl lg:text-4xl  tracking-tighter leading-none "
         >
           {shortDescription}
         </motion.h1>
@@ -69,7 +69,7 @@ const About = () => {
             opacity: 1,
           }}
           viewport={{
-            amount: 1,
+            amount: .2,
             once: false,
           }}
           transition={{
