@@ -49,7 +49,7 @@ const data = {
       },
       teckStack:['react js','node js','express js','tailwind','flow-bite'],
       links: {
-        liveDemo: "https://frontend-ecommerce-five-mu.vercel.app",
+        liveDemo: "frontend-ecommerce-gamma-beryl.vercel.app",
         github: "https://github.com/Ui-Adiii/Ecommerce",
       },
     },
