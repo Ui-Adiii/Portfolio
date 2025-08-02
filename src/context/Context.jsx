@@ -6,8 +6,8 @@ const data = {
   fullName: "Aditya Mallick",
   email: "beingaditya198@gmail.com",
   github: "https://github.com/Ui-Adiii",
-  shortDescription:"I’m a full stack developer and a B.Tech student in Computer Science at C.V. Raman Global University.",
-  description:"I’m a full stack developer and B.Tech Computer Science student at C.V. Raman Global University, passionate about building accessible, user-friendly websites, exploring Next.js and design, and always eager to grow as a developer.",
+  shortDescription:"I’m a full stack developer and B.Tech Computer Science student at C.V. Raman Global University.",
+  description:"I specialize in building clean, responsive, and user-centric web applications using modern technologies like React.js, Next.js, Tailwind CSS, Node.js, Express.js, and MongoDB. With a strong foundation in Data Structures, Algorithms, DBMS, and Operating Systems, I’m always eager to bridge theoretical knowledge with real-world development. I’ve worked on full-stack projects such as e-commerce platforms and blog apps, implementing authentication, RESTful APIs, and interactive UIs. Currently focused on enhancing my design skills and exploring scalable architecture, I’m driven by curiosity, collaboration, and a commitment to continuous learning.",
   linkedin: "https://www.linkedin.com/in/aditya-mallick-",
   skills: [
     "Html",
