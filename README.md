@@ -45,29 +45,6 @@ A modern, responsive personal portfolio website built with **React.js** and **Vi
 
 ---
 
-## 📸 Demo UI Preview
-
-| Home Page                                   | About Section                                    | Projects Section                                 |
-| -------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
-| ![Home](./public/images/ProfilePic1.jpeg)   | ![About](./public/images/ProfilePic2.jpeg)      | ![Projects](./public/images/ProfilePic1.jpeg)   |
-
----
-
-## 🖼️ Screenshots
-
-### 🏠 Home Page
-![Home](./public/images/ProfilePic1.jpeg)
-
-### 👨‍💻 About Section
-![About](./public/images/ProfilePic2.jpeg)
-
-### 💼 Work Experience
-![Work](./public/images/ProfilePic1.jpeg)
-
-### 📞 Contact Form
-![Contact](./public/images/ProfilePic2.jpeg)
-
----
 
 ## 🧰 Tech Stack
 
