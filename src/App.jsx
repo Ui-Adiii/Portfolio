@@ -8,6 +8,7 @@ import Experience from "./pages/Experience";
 import React from "react";
 import SmoothScroll from "./components/SmoothScroll";
 import ScrollTop from "./components/ScrollTop";
+import CertificateCom from "./pages/CertificateCom";
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/certificate" element={<CertificateCom />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<Experience />} />
           <Route path="/experience" element={<Experience />} />

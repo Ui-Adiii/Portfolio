@@ -7,7 +7,7 @@ import { easeIn } from "framer-motion";
 import Container from "@/pages/Container";
 
 const ProjectCard = ({ project }) => {
-  console.log(project.techStack);
+  console.log(project);
   return (
     <>
       <div className="flex flex-col md:flex-row w-full  gap-10 pt-5 ">
@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
         >
           <div className="p-7 md:p-10 rounded-lg">
             <img
-              src={`/images/Project${project.number}.png`}
+              src={`/images/Projects/${project.image}`}
               className="rounded-lg w-full h-full object-cover object-center"
               alt=""
             />
@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => {
           )}
           <div className="flex flex-col items-start gap-2 ">
             {project.teckStack?.length > 0 && (
-              <span className="font-semibold">Used here:</span>
+              <span className="font-semibold">Tech Stack :</span>
             )}
             <div className="flex flex-wrap gap-4">
 
