@@ -32,11 +32,11 @@ const data = {
   ],
   experiences: [
     {
-      role: "Frontend Devloper",
-      time: "May 2025-June 2025",
-      companyName: "HARISIDDHI TECHNOLOGY PVT LTD.",
+      role: "Full Stack Devloper",
+      time: "June 2025-June 2025",
+      companyName: "MINDBRAIN INNOVATIONS PVT. LTD.",
       description:
-        "I worked as a Frontend Intern at a private limited company, where I focused on building responsive and user-friendly web interfaces using React.js, Tailwind CSS, and other modern frontend technologies. During my internship, I developed reusable components, optimized UI performance, and collaborated with design and backend teams to deliver seamless user experiences.",
+        "I worked as a Full Stack Development Intern at MindBrain Innovations Pvt. Ltd., where I focused on building full-stack web applications using the MERN stack—MongoDB, Express.js, React.js, and Node.js. During the internship, I developed responsive user interfaces, implemented server-side logic, integrated RESTful APIs, and performed database operations. I also collaborated with mentors and teammates to solve real-world development challenges, gaining hands-on experience with modern web technologies and best practices in full stack development.",
     },
   ],
   certificates: [
@@ -46,13 +46,13 @@ const data = {
       date: "August 2025",
       link: "https://freecodecamp.org/certification/fcc-9636e7de-ba0d-4e9f-92c4-c1fbab8678ba/responsive-web-design",
       image:'Certificate1.png'
-    },
+    }, 
     {
-      title: "The Complete MySQL Bootcamp: Go from Beginner to Expert",
+      title: "HTML, CSS and JS",
       issuer: "Udemy",
-      date: "Jul 2025",
-      link: "https://www.udemy.com/certificate/UC-25bd9d30-0727-48dd-a5d3-0b4124fa31af",
-      image:"Certificate2.png"
+      date: "August 2025",
+      link:"https://www.udemy.com/certificate/UC-fc67f7af-2342-47f4-b0e8-a878a0bcc57a",
+      image:'Certificate2.jpg'
     },
     {
       title: "Complete Linux Training",
@@ -74,6 +74,13 @@ const data = {
       date: "Oct 2024",
       link: "https://www.udemy.com/certificate/UC-4b2c6ead-0d43-48b7-9b20-d8f525caa49a",
       image:"Certificate5.png"
+    },
+     {
+      title: "The Complete MySQL Bootcamp: Go from Beginner to Expert",
+      issuer: "Udemy",
+      date: "Jul 2025",
+      link: "https://www.udemy.com/certificate/UC-25bd9d30-0727-48dd-a5d3-0b4124fa31af",
+      image:"Certificate6.png"
     },
   ],
   projects: [

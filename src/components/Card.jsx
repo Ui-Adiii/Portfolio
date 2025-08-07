@@ -1,5 +1,6 @@
 import React from "react";
 import {easeIn, motion} from 'framer-motion'
+import { Button } from "./ui/button";
 const Card = ({ exp }) => {
   return (
     <div className="flex flex-col gap-5">
@@ -27,6 +28,9 @@ const Card = ({ exp }) => {
       </div>
       <h1  className="text-yellow-400">{exp?.companyName}</h1>
       <p className="text-white/50">{exp.description}</p>
+      <a href="work1.pdf" >
+        <Button variant={'secondary'} className={'w-fit px-7 py-2'}>View </Button>
+      </a>
     </div>
   );
 };
