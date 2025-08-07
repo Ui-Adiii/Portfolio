@@ -9,8 +9,6 @@ const CertificateCom = () => {
     <div className="py-20 flex flex-wrap gap-5 justify-center ">
       {
         certificates.map((certificate)=>(
-
-
           <CertificateCard
             title={certificate.title}
             issuer={certificate.issuer}
