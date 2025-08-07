@@ -15,7 +15,7 @@ const Main = () => {
       <Projects/>
       <hr />
       <Capability/>
-      <hr className="mb-60 md:mb-0"/>
+      <hr className="mb-96 md:mb-0"/>
       <About/>
       <hr />
       <Contact  />
