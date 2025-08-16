@@ -82,6 +82,20 @@ const data = {
       link: "https://www.udemy.com/certificate/UC-25bd9d30-0727-48dd-a5d3-0b4124fa31af",
       image:"Certificate6.png"
     },
+    {
+      title: "Git, Github and Md",
+      issuer: "Udemy",
+      date: "Aug 2025",
+      link: "https://www.udemy.com/certificate/UC-5462d415-2978-4b2a-9231-5896a7535e43",
+      image:"Certificate7.png"
+    },
+     {
+      title: "Java for Beginners",
+      issuer: "Udemy",
+      date: "Aug 2025",
+      link:"https://www.udemy.com/certificate/UC-71acebc6-85df-49c1-98d5-a1508a421b7d",
+      image:"Certificate8.png"
+    },
   ],
   projects: [
     {
@@ -117,8 +131,27 @@ const data = {
         "shadcn ui",
       ],
       links: {
-        liveDemo: "https://frontend-blog-rho.vercel.app/",
+        liveDemo: "https://frontend-blog-rho.vercel.app",
         github: "https://github.com/Ui-Adiii/Blog-App",
+      },
+    },
+    {
+      title: "Full-Stack Todo App",
+      image:"Project3.png",
+      description:
+        "A modern full-stack Todo Application built with Next.js 15, React 19, and MongoDB — featuring secure authentication (JWT), real-time task management, progress tracking, and a responsive UI with Tailwind CSS.",
+      projectInfo: {
+        year: 2025,
+        role: "Full Stack Developer",
+      },
+      teckStack: [
+        "next js",
+        "mongodb",
+        "tailwind",
+      ],
+      links: {
+        liveDemo: "https://todo-app-rho-ten-53.vercel.app",
+        github: "https://github.com/Ui-Adiii/Todo-App",
       },
     },
   ],
