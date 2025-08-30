@@ -1,59 +1,37 @@
 import { InfoContext } from "@/context/Context";
 import React, { useContext } from "react";
 import Container from "./Container";
-import {easeIn, motion} from 'framer-motion'
+
 const Capability = () => {
   const { skills } = useContext(InfoContext);
+
+  const categories = {
+    programmingLanguages: "Languages",
+    frontend: "Frontend",
+    backend: "Backend",
+    dataBase: "Database",
+    versionControl: "Version Control",
+    uiLibraries: "UI Libraries",
+    stateManagementConcepts: "State Management & Concepts",
+  };
+
   return (
-    <div className="gap-5 flex md:flex-row flex-col py-10  text-white  ">
-      <div className="w-full md:w-1/2 ">
-        <motion.h1 
-          initial={{
-            y:20,
-            opacity:0
-          }}
-          whileInView={{
-            y:0,
-            opacity:1
-          }}
-          viewport={{
-            once:false,
-            amount:.5
-          }}
-          transition={{
-            delay:.2,
-            duration:.7,
-            transform:easeIn
-          }}
-        className=" text-4xl leading-none tracking-tighter font-semibold uppercase lg:text-6xl ">My Capabilities</motion.h1>
+    <div className="gap-5 flex md:flex-row flex-col py-10 text-white">
+      <div className="w-full md:w-1/2">
+        <h1 className="text-4xl leading-none tracking-tighter font-semibold uppercase lg:text-6xl">
+          My Capabilities
+        </h1>
       </div>
-      <div className="w-full md:w-1/2 ">
-        <motion.p 
-        initial={{
-            y:20,
-            opacity:0
-          }}
-          whileInView={{
-            y:0,
-            opacity:1
-          }}
-          viewport={{
-            once:false,
-            amount:.5
-          }}
-          transition={{
-            delay:.2,
-            duration:.7,
-            transform:easeIn
-          }}
-           className="text-white text-xl md:text-2xl lg:text-3xl font-semibold  mb-5">
-         Technologies I Work With :
-        </motion.p>
-        <div className="flex  flex-wrap gap-4 ">
-          {skills.map((skill, idx) => (
-            <Container key={idx}>{skill}</Container>
-          ))}
-        </div>
+
+      <div className="w-full md:w-1/2 flex flex-wrap gap-4 justify-center md:justify-start">
+        {Object.entries(categories).map(([key]) =>
+          skills?.[key]?.length > 0 &&
+          skills[key].map((item, idx) => (
+            <Container key={idx} image={item.image}>
+              {item.text}
+            </Container>
+          ))
+        )}
       </div>
     </div>
   );

@@ -11,25 +11,42 @@ const data = {
   description:
     "I specialize in building clean, responsive, and user-centric web applications using modern technologies like React.js, Next.js, Tailwind CSS, Node.js, Express.js, and MongoDB. With a strong foundation in Data Structures, Algorithms, DBMS, and Operating Systems, I’m always eager to bridge theoretical knowledge with real-world development. I’ve worked on full-stack projects such as e-commerce platforms and blog apps, implementing authentication, RESTful APIs, and interactive UIs. Currently focused on enhancing my design skills and exploring scalable architecture, I’m driven by curiosity, collaboration, and a commitment to continuous learning.",
   linkedin: "https://www.linkedin.com/in/aditya-mallick-",
-  skills: [
-    "Html",
-    "Css",
-    "JS",
-    "React JS",
-    "Node JS",
-    "Express JS",
-    "Mongo Db",
-    "Java",
-    "C",
-    "MySql",
-    "Git",
-    "Github",
-    "Tailwind Css",
-    "Redux",
-    "Oop",
-    "Shadcn Ui",
-    "BootStrap",
-  ],
+  skills: {
+    frontend: [
+      { text: "Html", image: "https://icon.icepanel.io/Technology/svg/HTML5.svg" },
+      { text: "Css", image: "https://icon.icepanel.io/Technology/svg/CSS3.svg" },
+      { text: "React JS", image: "https://icon.icepanel.io/Technology/svg/React.svg" },
+      { text: "Next JS", image: "https://icon.icepanel.io/Technology/png-shadow-512/Next.js.png" },
+    ],
+    backend: [
+      { text: "Node JS", image: "https://icon.icepanel.io/Technology/svg/Node.js.svg" },
+      { text: "Express JS", image: "https://icon.icepanel.io/Technology/png-shadow-512/Express.png" },
+    ],
+    dataBase: [
+      { text: "Mongo Db", image: "https://icon.icepanel.io/Technology/svg/MongoDB.svg" },
+      { text: "MySql", image: "https://icon.icepanel.io/Technology/svg/MySQL.svg" },
+    ],
+    "programmingLanguages": [
+      { text: "Java", image: "https://icon.icepanel.io/Technology/svg/Java.svg" },
+      { text: "Java Script", image: "https://icon.icepanel.io/Technology/svg/JavaScript.svg" },
+      { text: "C", image: "https://icon.icepanel.io/Technology/svg/C.svg" },
+    ],
+    "versionControl": [
+      { text: "Git", image: "https://icon.icepanel.io/Technology/svg/Git.svg" },
+      { text: "Github", image: "https://icon.icepanel.io/Technology/png-shadow-512/GitHub.png" },
+    ],
+    "uiLibraries": [
+      { text: "Tailwind Css", image: "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg" },
+      { text: "Shadcn Ui", image: "https://thafd.bing.com/th/id/ODF.U5GMDHnGbbf7N1fRNsCFnQ?w=32&h=32&qlt=70&pcl=fffffc&o=7&cb=thws4&pid=1.2&rm=3" },
+      // { text: "BootStrap", image: "https://icon.icepanel.io/Technology/svg/Bootstrap.svg" },
+    ],
+    "stateManagementConcepts": [
+      { text: "Redux", image: "https://icon.icepanel.io/Technology/svg/Redux.svg" },
+      { text: "Postman", image: "https://icon.icepanel.io/Technology/svg/Postman.svg" },
+      { text: "Type Script", image: "https://icon.icepanel.io/Technology/svg/TypeScript.svg"},
+      // { text: "Oop"},
+    ],
+  },
   experiences: [
     {
       role: "Full Stack Devloper",
