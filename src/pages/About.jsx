@@ -6,7 +6,7 @@ import { InfoContext } from "@/context/Context";
 const About = () => {
   const { shortDescription, description } = useContext(InfoContext);
   return (
-    <div className="flex py-5   text-white flex-col-reverse max-h-screen md:flex-row  gap-10 lg:gap-0">
+    <div className="flex py-5  text-white flex-col-reverse  md:flex-row  gap-10 lg:gap-0">
       <div className="w-full md:w-1/2   ">
         <motion.h1
           initial={{
@@ -55,7 +55,7 @@ const About = () => {
             duration: 0.5,
             ease: easeIn,
           }}
-          className="mt-40 md:mt-0 text-2xl text-white md:text-3xl lg:text-4xl  tracking-tighter leading-none "
+          className=" text-2xl text-white md:text-3xl lg:text-4xl  tracking-tighter leading-none "
         >
           {shortDescription}
         </motion.h1>
