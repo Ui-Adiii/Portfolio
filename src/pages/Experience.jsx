@@ -8,7 +8,7 @@ const Experience = () => {
  
   
   return (
-    <div  className="pt-20">
+    <div  className="pt-10 md:pt-20">
       <WorkAbout />
       <hr />
       <Capability/>
